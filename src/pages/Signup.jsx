@@ -1,27 +1,29 @@
 import React from "react";
+import { useState } from "react";
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 
-//const document = document.getElementById();
 
-const Signup = [formData, setFormData] = useState({
+ function Signup () {
+ const [formData, setFormData] = useState({
     username: '',
     email: '',
     password: ''
-  });
+     });
 
-  const handleChange = (e) => {
+    const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
-    });
+       [name]: value
+     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+    
+   const handleSubmit = (e) => {  e.preventDefault();
     console.log('Form data submitted:', formData);
   };
 
-  
+  return (
     <form onSubmit={handleSubmit}>
       <div>
         <label>Username:</label>
@@ -37,7 +39,7 @@ const Signup = [formData, setFormData] = useState({
       </div>
       <button type="submit">Sign Up</button>
     </form>
-  
+ )}  
 
 
 export default Signup

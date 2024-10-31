@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
         <div>
       <ul>
-         <li><a class="active" href="#about ">About</a></li>
-         <li><a href="#clubs ">Clubs</a></li>
-         <li><a href="#Leave a review">Leave a Review</a></li>
-         <li style={{float: 'right'}}><a href="#Sign up">Sign Up</a></li>
+         <li><Link className="active" to="/about">About</Link></li>
+         <li><Link to="/home">Home</Link></li>
+         <li><Link to="/reviews">Leave a Review</Link></li>
+         <li style={{float: 'right'}}><Link to="/signup">Sign Up</Link></li>
          <img src="" alt=""></img>
       </ul>
         </div>
