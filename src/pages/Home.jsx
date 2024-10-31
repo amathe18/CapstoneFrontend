@@ -1,12 +1,16 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div>
-      <nav></nav>
-      <h1>Welcome to the Home Page</h1>
-      <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur reiciendis, magni libero alias sunt atque quod quasi animi corrupti quisquam facilis dignissimos voluptatem dolorem similique, voluptatum, necessitatibus esse provident veritatis.</h2>
+      <h1>What's the TEAm?</h1>
+
+      <Link to="/reviews">
+      <h2>Search for a Team </h2>
+      </Link>
+
     </div>
   );
 };

@@ -1,8 +1,7 @@
-# React + Vite
+Yelp -ish app for VB players who may be setting off on uncharted waters
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A P2P site where you can locate or add any club from anywhere that youve played and leave a review after signing up instead of having to maybe know someone who knows someone who played 
 
-Currently, two official plugins are available:
+Tech used is MERN, HTML/CSS/JS 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+API built with MONGODB/Mongoose, 
